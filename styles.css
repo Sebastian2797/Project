@@ -1,0 +1,405 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0033a0;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust the size of the logo as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: -5px;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0033a0;
+    background-color: white;
+}
+
+nav ul li a:hover::after {
+    background-color: #0033a0;
+}
+
+.hero {
+    background-image: url('https://t4.ftcdn.net/jpg/03/86/34/01/360_F_386340158_0YwYaIB0AwYtXl3s7SlUbAooaZ37XT6O.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(153, 153, 154, 0.7);
+    border-radius: 10px;
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #cc5200;
+}
+
+.features {
+    background-color: #e0f7fa; /* Light blue background color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+}
+
+.grid-item {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    position: relative;
+    text-decoration: none; /* Ensure the text decoration is none for links */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.grid-item h3 {
+    margin-top: 0;
+}
+
+.grid-item p {
+    font-size: 16px;
+}
+
+/* Adding background colors */
+.accounts {
+    background-color: rgba(0, 51, 160, 0.8);
+    background-image: url('accounts.jpg');
+}
+
+.loans {
+    background-color: rgba(0, 51, 160, 0.8);
+    background-image: url('loans.jpg');
+}
+
+.insurance {
+    background-color: rgba(0, 51, 160, 0.8);
+    background-image: url('insurance.jpg');
+}
+
+.testimonials {
+    background-color: #e0e0e0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.testimonial .author {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.call-to-action {
+    background-color: #0033a0;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.call-to-action .cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #0033a0;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Explore Page Styles */
+.explore {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.explore h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.explore p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.explore img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.explore-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.explore-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.explore-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.explore-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Additional Styles for Signup and Contact Pages */
+
+/* Signup Page Styles */
+.sign-up {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sign-up h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sign-up p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sign-up form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sign-up input[type="text"],
+.sign-up input[type="email"],
+.sign-up input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-up button[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-up button[type="submit"]:hover {
+    background-color: #cc5200;
+}
+
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 150px; /* Ensure the textarea has enough height for multi-line input */
+}
+
+.contact button[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #cc5200;
+}
